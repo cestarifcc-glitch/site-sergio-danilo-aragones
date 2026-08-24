@@ -1,14 +1,9 @@
-SERGIO DANILO ARAGONEZ — V33
+SERGIO DANILO ARAGONEZ — V34
 
-Implementação do rascunho mobile aprovado:
-- Hero mobile redesenhado.
-- Nome à esquerda, foto grande à direita.
-- Funções profissionais integradas à esquerda com marcadores circulares dourados.
-- Foto do Dr. Sergio significativamente maior.
-- Fundo escuro com halo dourado discreto atrás da foto.
-- Sobre mim inicia logo abaixo do hero.
-- Publicações no mobile em cards horizontais:
-  capa à esquerda, informações à direita.
-- Desktop preservado.
+Ajustes mobile:
+- Removida a rolagem horizontal.
+- Dourado reforçado no nome Aragonez, ícones, divisórias e halo.
+- Foto do Dr. Sergio ampliada e subida.
+- Fundo dourado atrás do Dr. Sergio mais presente, sem ficar pesado.
+- Estrutura da home, galeria e publicações preservada.
 - Textos originais das publicações preservados.
-- Galeria completa e visualizador preservados.
