@@ -1,16 +1,16 @@
-SERGIO DANILO ARAGONEZ — V3
+SERGIO DANILO ARAGONEZ — V5
 
-Esta versão foi refeita usando o rascunho aprovado como referência direta.
+Código atualizado a partir do ZIP enviado pelo usuário.
 
-Principais mudanças:
-- Hero desktop muito mais próximo do rascunho.
-- Foto REAL do Dr. Sergio em grande destaque.
-- Nome à direita no desktop.
-- No mobile: nome primeiro e foto imediatamente abaixo, integrada ao mesmo bloco.
-- Galeria logo após a abertura, com composição editorial.
-- Capas REAIS dos três livros.
-- Rodapé escuro inspirado no rascunho.
-- Menu mobile funcional e lightbox da galeria.
+Referência visual consolidada:
+1. MÉDICO / HERO — PRETO
+2. TRAJETÓRIA + GALERIA — BRANCO
+3. PUBLICAÇÕES — PRETO
+4. RODAPÉ / CONTATO — BRANCO
 
-Nesta fase as imagens reais são carregadas do acervo público do site atual.
-Na etapa final podemos trazer os arquivos originais para dentro do projeto.
+Outros ajustes:
+- cabeçalho compacto;
+- foto real do Dr. Sergio maior e mais ao topo;
+- galeria horizontal e visualmente integrada;
+- publicações em fundo preto;
+- responsividade para celular.
