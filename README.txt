@@ -1,9 +1,12 @@
-SERGIO DANILO ARAGONEZ — V34
+SERGIO DANILO ARAGONEZ — V35
 
-Ajustes mobile:
-- Removida a rolagem horizontal.
-- Dourado reforçado no nome Aragonez, ícones, divisórias e halo.
-- Foto do Dr. Sergio ampliada e subida.
-- Fundo dourado atrás do Dr. Sergio mais presente, sem ficar pesado.
-- Estrutura da home, galeria e publicações preservada.
+Hero mobile:
+- Nome em exatamente duas linhas:
+  Sergio Danilo
+  Aragonez
+- Ícones substituídos por SVG inline.
+- Foto confinada à coluna direita, sem sobrepor os textos.
+- Removida rolagem horizontal.
+- Dourado reforçado.
+- Foto do Dr. Sergio mantida em destaque.
 - Textos originais das publicações preservados.
