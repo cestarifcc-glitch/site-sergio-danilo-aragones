@@ -552,6 +552,286 @@ footer{background:#061116;color:#ddd}
   #medico .portrait:before{width:230px!important;height:230px!important}
 }
 
+
+/* V33 — mobile baseado no rascunho aprovado */
+@media(max-width:700px){
+  header{
+    height:72px!important;
+    background:#03080b!important;
+  }
+  .head{
+    height:72px!important;
+    padding:0 4px!important;
+  }
+  .brand{
+    font-size:14px!important;
+    letter-spacing:.035em!important;
+  }
+  .brand small{
+    display:none!important;
+  }
+  .mobile-menu-btn{
+    border:1px solid #c89132!important;
+    background:transparent!important;
+    color:#fff!important;
+    min-width:84px!important;
+    height:46px!important;
+    font-size:15px!important;
+    letter-spacing:.08em!important;
+  }
+
+  #medico{
+    background:
+      radial-gradient(circle at 78% 42%,rgba(222,165,58,.18),transparent 20%),
+      radial-gradient(circle at 68% 48%,rgba(222,165,58,.06),transparent 34%),
+      #03080b!important;
+  }
+
+  #medico .hero-grid{
+    display:grid!important;
+    grid-template-columns:47% 53%!important;
+    grid-template-areas:
+      "name portrait"
+      "roles portrait"!important;
+    column-gap:0!important;
+    row-gap:10px!important;
+    align-items:stretch!important;
+    min-height:0!important;
+    padding:30px 22px 0!important;
+    overflow:hidden!important;
+  }
+
+  #medico .hero-copy{display:contents!important}
+  #medico .eyebrow,
+  #medico .hero-eyebrow,
+  #medico .goldline,
+  #medico .actions{display:none!important}
+
+  #medico h1{
+    grid-area:name!important;
+    margin:0!important;
+    padding:0 4px 0 0!important;
+    align-self:start!important;
+    font-size:45px!important;
+    line-height:.91!important;
+    letter-spacing:-.035em!important;
+    position:relative!important;
+    z-index:5!important;
+  }
+  #medico h1 span{
+    display:block!important;
+    color:#e2aa49!important;
+  }
+
+  #medico .hero-roles{
+    grid-area:roles!important;
+    align-self:start!important;
+    margin:14px 0 26px!important;
+    padding:0 8px 0 0!important;
+    position:relative!important;
+    z-index:5!important;
+  }
+
+  #medico .hero-role-item{
+    display:grid!important;
+    grid-template-columns:42px 1fr!important;
+    gap:10px!important;
+    align-items:start!important;
+    padding:11px 0!important;
+    border-bottom:1px solid rgba(255,255,255,.14)!important;
+  }
+  #medico .hero-role-item:last-child{
+    border-bottom:0!important;
+  }
+
+  #medico .role-icon{
+    width:34px!important;
+    height:34px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    border:1px solid #d49b33!important;
+    border-radius:50%!important;
+    color:#d49b33!important;
+    font-size:15px!important;
+    line-height:1!important;
+  }
+
+  #medico .role-text{
+    display:block!important;
+    font-family:Arial,Helvetica,sans-serif!important;
+    font-size:12.7px!important;
+    line-height:1.36!important;
+    color:#f4f1ea!important;
+  }
+
+  #medico .portrait{
+    grid-area:portrait!important;
+    position:relative!important;
+    height:auto!important;
+    min-height:430px!important;
+    margin:0 -30px 0 -18px!important;
+    display:flex!important;
+    align-items:flex-end!important;
+    justify-content:flex-end!important;
+    overflow:visible!important;
+  }
+
+  #medico .portrait img{
+    position:relative!important;
+    z-index:3!important;
+    width:auto!important;
+    height:445px!important;
+    max-width:none!important;
+    object-fit:contain!important;
+    object-position:bottom right!important;
+    margin:0!important;
+    filter:drop-shadow(0 12px 24px rgba(0,0,0,.28))!important;
+  }
+
+  #medico .portrait:before{
+    content:""!important;
+    position:absolute!important;
+    z-index:1!important;
+    width:410px!important;
+    height:410px!important;
+    right:-76px!important;
+    top:28px!important;
+    left:auto!important;
+    bottom:auto!important;
+    border-radius:50%!important;
+    border:1px solid rgba(217,166,71,.16)!important;
+    background:
+      radial-gradient(circle at 55% 48%,rgba(226,170,71,.10),transparent 53%)!important;
+    box-shadow:
+      0 0 0 52px rgba(217,166,71,.012),
+      0 0 0 100px rgba(217,166,71,.006)!important;
+    transform:none!important;
+  }
+
+  #medico .portrait:after{
+    content:""!important;
+    display:block!important;
+    position:absolute!important;
+    z-index:1!important;
+    width:260px!important;
+    height:260px!important;
+    right:-30px!important;
+    top:112px!important;
+    border-radius:50%!important;
+    background:radial-gradient(circle,rgba(221,161,47,.24),rgba(221,161,47,.08) 32%,transparent 68%)!important;
+    filter:blur(10px)!important;
+    opacity:.85!important;
+  }
+
+  /* Sobre mim starts flush under the hero, like the approved mockup */
+  #sobre{
+    border-top:0!important;
+    padding-top:42px!important;
+  }
+  #sobre h2{
+    font-size:38px!important;
+    line-height:1.03!important;
+    margin-top:8px!important;
+  }
+
+  /* publication cards: cover left, information right */
+  #publicacoes .books{
+    display:block!important;
+  }
+  #publicacoes .book-card{
+    display:block!important;
+    padding:0!important;
+    margin:0 0 14px!important;
+    border:0!important;
+    background:#f8f4ed!important;
+    border-radius:8px!important;
+    box-shadow:0 4px 16px rgba(0,0,0,.08)!important;
+    overflow:hidden!important;
+  }
+  #publicacoes .book-link{
+    display:grid!important;
+    grid-template-columns:130px minmax(0,1fr)!important;
+    gap:18px!important;
+    align-items:center!important;
+    padding:12px!important;
+  }
+  #publicacoes .cover{
+    width:130px!important;
+    height:190px!important;
+    margin:0!important;
+    box-shadow:none!important;
+    border-radius:2px!important;
+    overflow:hidden!important;
+  }
+  #publicacoes .cover img{
+    width:100%!important;
+    height:100%!important;
+    max-height:none!important;
+    object-fit:cover!important;
+  }
+  #publicacoes .book-meta{
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    align-self:center!important;
+  }
+  #publicacoes .book-meta h3{
+    font-size:27px!important;
+    line-height:1.06!important;
+    margin:0 0 8px!important;
+  }
+  #publicacoes .book-meta p{
+    font-size:16px!important;
+    line-height:1.35!important;
+    margin:0 0 12px!important;
+  }
+  #publicacoes .book-line{
+    width:34px!important;
+    margin:10px 0 0!important;
+  }
+  #publicacoes .book-cta{
+    grid-column:2!important;
+    margin:4px 0 0!important;
+    width:max-content!important;
+    color:#ad7725!important;
+  }
+}
+
+@media(max-width:390px){
+  #medico .hero-grid{
+    grid-template-columns:48% 52%!important;
+    padding-left:16px!important;
+    padding-right:16px!important;
+  }
+  #medico h1{font-size:41px!important}
+  #medico .portrait{
+    min-height:405px!important;
+    margin-right:-36px!important;
+  }
+  #medico .portrait img{height:420px!important}
+  #medico .hero-role-item{
+    grid-template-columns:38px 1fr!important;
+    gap:8px!important;
+  }
+  #medico .role-icon{
+    width:31px!important;
+    height:31px!important;
+  }
+  #medico .role-text{font-size:12px!important}
+
+  #publicacoes .book-link{
+    grid-template-columns:112px minmax(0,1fr)!important;
+    gap:14px!important;
+  }
+  #publicacoes .cover{
+    width:112px!important;
+    height:172px!important;
+  }
+  #publicacoes .book-meta h3{font-size:24px!important}
+  #publicacoes .book-meta p{font-size:15px!important}
+}
+
 </style>
 </head>
 <body>
@@ -580,10 +860,20 @@ footer{background:#061116;color:#ddd}
       <div class="eyebrow hero-eyebrow">Médico Radiologista · Autor</div>
       <h1>Sergio Danilo<span>Aragonez</span></h1>
       <div class="goldline"></div>
-      <p><div class="hero-roles">
-  <span>Médico Radiologista</span>
-  <span>Diretor da Clínica Diag Imagem</span>
-  <span>Diretor técnico do Serviço de Radiologia do HCPM – Palmeira das Missões</span>
+      <p>
+<div class="hero-roles">
+  <div class="hero-role-item">
+    <span class="role-icon" aria-hidden="true">♧</span>
+    <span class="role-text">Médico<br>Radiologista</span>
+  </div>
+  <div class="hero-role-item">
+    <span class="role-icon" aria-hidden="true">⌂</span>
+    <span class="role-text">Diretor da<br>Clínica Diag Imagem</span>
+  </div>
+  <div class="hero-role-item">
+    <span class="role-icon" aria-hidden="true">○</span>
+    <span class="role-text">Diretor técnico do<br>Serviço de Radiologia<br>do HCPM – Palmeira<br>das Missões</span>
+  </div>
 </div></p>
       <div class="actions"></div>
     </div>

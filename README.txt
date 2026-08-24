@@ -1,10 +1,14 @@
-SERGIO DANILO ARAGONEZ — V31
+SERGIO DANILO ARAGONEZ — V33
 
-Ajuste desta versão:
-- Publicações no mobile reorganizadas em duas colunas.
-- Capa à esquerda.
-- Título, subtítulo e “Conhecer a obra” à direita.
-- Menos espaço vertical e menos rolagem.
+Implementação do rascunho mobile aprovado:
+- Hero mobile redesenhado.
+- Nome à esquerda, foto grande à direita.
+- Funções profissionais integradas à esquerda com marcadores circulares dourados.
+- Foto do Dr. Sergio significativamente maior.
+- Fundo escuro com halo dourado discreto atrás da foto.
+- Sobre mim inicia logo abaixo do hero.
+- Publicações no mobile em cards horizontais:
+  capa à esquerda, informações à direita.
 - Desktop preservado.
-- Mantidas as correções do hero mobile da V30.
-- Mantidos os textos originais das publicações.
+- Textos originais das publicações preservados.
+- Galeria completa e visualizador preservados.
