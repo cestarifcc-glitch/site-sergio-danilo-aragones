@@ -1,15 +1,8 @@
-SERGIO DANILO ARAGONEZ — SITE V1
+SERGIO DANILO ARAGONEZ — V2
 
-Primeiro protótipo funcional da nova página inicial.
-
-- Abra index.html no navegador para testar.
-- Esta versão usa temporariamente algumas imagens hospedadas no site atual.
-- Antes da publicação definitiva, as imagens devem ser substituídas por arquivos locais/originais.
-- O menu mobile e a ampliação das imagens da galeria já funcionam.
-
-Estrutura prevista:
-Início
-Trajetória
-Galeria / Acervo
-Publicações
-Contato
+- Nova abertura inspirada no rascunho aprovado.
+- No celular: nome do Dr. Sergio e foto real aparecem juntos no início.
+- Foram usadas apenas imagens reais já publicadas no site atual.
+- Galeria em destaque com ampliação das fotos.
+- Menu responsivo.
+- Esta etapa ainda referencia o acervo público da Hostinger. Depois podemos substituir pelas fotos originais em arquivos locais.
