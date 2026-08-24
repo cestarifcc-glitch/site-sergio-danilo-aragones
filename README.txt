@@ -1,16 +1,14 @@
-SERGIO DANILO ARAGONEZ — V5
+SERGIO DANILO ARAGONEZ — V19
 
-Código atualizado a partir do ZIP enviado pelo usuário.
+Foco desta versão: REVISÃO MOBILE
 
-Referência visual consolidada:
-1. MÉDICO / HERO — PRETO
-2. TRAJETÓRIA + GALERIA — BRANCO
-3. PUBLICAÇÕES — PRETO
-4. RODAPÉ / CONTATO — BRANCO
-
-Outros ajustes:
-- cabeçalho compacto;
-- foto real do Dr. Sergio maior e mais ao topo;
-- galeria horizontal e visualmente integrada;
-- publicações em fundo preto;
-- responsividade para celular.
+- Conteúdo do Sobre mim da V18 preservado.
+- Cabeçalho mobile mais compacto.
+- Hero reduzido e melhor proporcionado no celular.
+- Tamanhos de títulos revisados.
+- Espaçamentos verticais reduzidos.
+- Prévia da galeria otimizada para telas pequenas.
+- Publicações mais compactas no celular.
+- Contato/rodapé revisado.
+- Página da galeria completa também recebeu ajustes mobile.
+- Desktop preservado.
