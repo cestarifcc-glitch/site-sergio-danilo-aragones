@@ -1,8 +1,16 @@
-SERGIO DANILO ARAGONEZ — V2
+SERGIO DANILO ARAGONEZ — V3
 
-- Nova abertura inspirada no rascunho aprovado.
-- No celular: nome do Dr. Sergio e foto real aparecem juntos no início.
-- Foram usadas apenas imagens reais já publicadas no site atual.
-- Galeria em destaque com ampliação das fotos.
-- Menu responsivo.
-- Esta etapa ainda referencia o acervo público da Hostinger. Depois podemos substituir pelas fotos originais em arquivos locais.
+Esta versão foi refeita usando o rascunho aprovado como referência direta.
+
+Principais mudanças:
+- Hero desktop muito mais próximo do rascunho.
+- Foto REAL do Dr. Sergio em grande destaque.
+- Nome à direita no desktop.
+- No mobile: nome primeiro e foto imediatamente abaixo, integrada ao mesmo bloco.
+- Galeria logo após a abertura, com composição editorial.
+- Capas REAIS dos três livros.
+- Rodapé escuro inspirado no rascunho.
+- Menu mobile funcional e lightbox da galeria.
+
+Nesta fase as imagens reais são carregadas do acervo público do site atual.
+Na etapa final podemos trazer os arquivos originais para dentro do projeto.
