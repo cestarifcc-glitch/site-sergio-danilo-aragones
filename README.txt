@@ -1,14 +1,10 @@
-SERGIO DANILO ARAGONEZ — V29
+SERGIO DANILO ARAGONEZ — V31
 
-Correções desta versão:
-- Mantidos integralmente os textos originais das três publicações da V28.
-- Hero mobile reorganizado:
-  • funções profissionais à esquerda;
-  • foto real do Dr. Sergio à direita;
-  • sem botão “Sobre mim”;
-  • sem botão de galeria no hero.
+Ajuste desta versão:
+- Publicações no mobile reorganizadas em duas colunas.
+- Capa à esquerda.
+- Título, subtítulo e “Conhecer a obra” à direita.
+- Menos espaço vertical e menos rolagem.
 - Desktop preservado.
-- Funções exibidas:
-  Médico Radiologista
-  Diretor da Clínica Diag Imagem
-  Diretor técnico do Serviço de Radiologia do HCPM – Palmeira das Missões
+- Mantidas as correções do hero mobile da V30.
+- Mantidos os textos originais das publicações.

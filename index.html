@@ -163,66 +163,269 @@ footer{background:#061116;color:#ddd}
 }
 .hero-roles span+span{margin-top:3px}
 
+.portrait{height:300px!important}
+  .portrait img{height:300px!important}
+  .portrait:before{width:260px!important;height:260px!important;right:-38px!important}
+  .hero-roles span{font-size:14px;line-height:1.36}
+  .hero-roles span+span{margin-top:8px}
+}
+
+
 @media(max-width:900px){
   .hero-grid{
     display:grid!important;
-    grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr)!important;
+    grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr)!important;
     grid-template-areas:
       "title title"
       "roles photo";
-    gap:8px 10px!important;
+    column-gap:8px!important;
+    row-gap:0!important;
     align-items:end!important;
-    padding-top:24px!important;
+    min-height:auto!important;
+    padding-top:22px!important;
   }
+
   .hero-copy{display:contents!important}
-  .hero .eyebrow{grid-area:title;align-self:end;margin-bottom:2px}
-  .hero h1{grid-area:title;margin-top:22px!important;padding-top:12px}
-  .portrait{
-    grid-area:photo!important;
-    height:330px!important;
-    margin:0!important;
-    align-self:end!important;
-    justify-content:flex-end!important;
+
+  .hero-eyebrow{
+    display:none!important;
   }
-  .portrait img{
-    height:330px!important;
-    max-width:100%;
-    object-fit:contain;
-    object-position:bottom right;
+
+  .hero h1{
+    grid-area:title;
+    margin:0 0 12px 0!important;
+    padding:0!important;
+    font-size:clamp(47px,12.8vw,64px)!important;
+    line-height:.9!important;
+    position:relative;
+    z-index:4;
   }
-  .portrait:before{
-    width:285px!important;
-    height:285px!important;
-    right:-32px!important;
-    left:auto!important;
-    bottom:0!important;
-    transform:none!important;
+
+  .hero h1 span{
+    display:block;
   }
+
   .goldline{display:none!important}
+
   .hero-roles{
     grid-area:roles;
     align-self:center;
-    margin:0 0 22px 0;
-    padding-right:2px;
+    margin:0 0 42px 0!important;
+    padding-right:4px;
+    position:relative;
+    z-index:4;
   }
+
   .hero-roles span{
-    font-size:15px;
-    line-height:1.38;
+    display:block;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:14px!important;
+    line-height:1.38!important;
+    color:#f1ede5;
   }
-  .hero-roles span+span{margin-top:10px}
+
+  .hero-roles span+span{margin-top:9px!important}
+
+  .portrait{
+    grid-area:photo!important;
+    height:300px!important;
+    margin:-16px -6px 0 0!important;
+    display:flex!important;
+    align-items:flex-end!important;
+    justify-content:flex-end!important;
+    position:relative!important;
+    overflow:visible!important;
+  }
+
+  .portrait img{
+    height:322px!important;
+    width:auto!important;
+    max-width:100%!important;
+    object-fit:contain!important;
+    object-position:bottom right!important;
+    position:relative!important;
+    z-index:3!important;
+  }
+
+  /* softer, offset halo; avoids the large "target" circle */
+  .portrait:before{
+    content:""!important;
+    position:absolute!important;
+    width:300px!important;
+    height:300px!important;
+    right:-26px!important;
+    left:auto!important;
+    bottom:-8px!important;
+    transform:none!important;
+    border-radius:50%!important;
+    border:1px solid rgba(216,166,77,.12)!important;
+    box-shadow:
+      0 0 0 38px rgba(216,166,77,.018),
+      0 0 0 74px rgba(216,166,77,.009)!important;
+    background:
+      radial-gradient(circle at 45% 48%, rgba(216,166,77,.07), transparent 58%)!important;
+    opacity:.8!important;
+    z-index:1!important;
+  }
+
+  .portrait:after{
+    content:""!important;
+    position:absolute!important;
+    width:330px!important;
+    height:250px!important;
+    right:-20px!important;
+    bottom:10px!important;
+    background:
+      radial-gradient(circle at 22% 35%,rgba(228,181,88,.55) 0 1px,transparent 1.5px),
+      radial-gradient(circle at 35% 18%,rgba(228,181,88,.38) 0 1px,transparent 1.5px),
+      radial-gradient(circle at 58% 27%,rgba(228,181,88,.4) 0 1px,transparent 1.5px),
+      radial-gradient(circle at 72% 48%,rgba(228,181,88,.30) 0 1px,transparent 1.5px),
+      linear-gradient(138deg,transparent 0 43%,rgba(216,166,77,.06) 43.2% 43.5%,transparent 43.7% 100%)!important;
+    opacity:.55!important;
+    pointer-events:none!important;
+    z-index:1!important;
+  }
+
   .actions{display:none!important}
 }
 
 @media(max-width:430px){
   .hero-grid{
-    grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr)!important;
-    gap:6px 8px!important;
+    grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)!important;
   }
-  .portrait{height:300px!important}
-  .portrait img{height:300px!important}
-  .portrait:before{width:260px!important;height:260px!important;right:-38px!important}
-  .hero-roles span{font-size:14px;line-height:1.36}
-  .hero-roles span+span{margin-top:8px}
+
+  .hero h1{
+    font-size:46px!important;
+    margin-bottom:10px!important;
+  }
+
+  .portrait{
+    height:286px!important;
+    margin:-20px -12px 0 0!important;
+  }
+
+  .portrait img{
+    height:307px!important;
+  }
+
+  .portrait:before{
+    width:272px!important;
+    height:272px!important;
+    right:-34px!important;
+  }
+
+  .portrait:after{
+    width:300px!important;
+    height:230px!important;
+    right:-28px!important;
+  }
+
+  .hero-roles{
+    margin-bottom:34px!important;
+  }
+
+  .hero-roles span{
+    font-size:13.5px!important;
+  }
+}
+
+
+/* V31 — publicações compactas no mobile */
+@media(max-width:700px){
+  #publicacoes .books,
+  #publicacoes .book-grid,
+  #publicacoes .publications-grid{
+    display:block!important;
+  }
+
+  #publicacoes .book,
+  #publicacoes .book-card,
+  #publicacoes article{
+    display:grid!important;
+    grid-template-columns:138px minmax(0,1fr)!important;
+    grid-template-rows:auto!important;
+    column-gap:22px!important;
+    align-items:center!important;
+    padding:26px 0!important;
+    margin:0!important;
+    border-top:1px solid rgba(14,24,28,.14)!important;
+  }
+
+  #publicacoes .book:first-child,
+  #publicacoes .book-card:first-child,
+  #publicacoes article:first-child{
+    border-top:0!important;
+  }
+
+  #publicacoes .book img,
+  #publicacoes .book-card img,
+  #publicacoes article img{
+    grid-column:1!important;
+    grid-row:1 / span 8!important;
+    width:138px!important;
+    height:auto!important;
+    max-height:215px!important;
+    object-fit:contain!important;
+    object-position:top center!important;
+    margin:0!important;
+    align-self:start!important;
+  }
+
+  #publicacoes .book > *:not(img),
+  #publicacoes .book-card > *:not(img),
+  #publicacoes article > *:not(img){
+    grid-column:2!important;
+    min-width:0!important;
+  }
+
+  #publicacoes h3{
+    margin:0 0 10px!important;
+    font-size:30px!important;
+    line-height:1.02!important;
+  }
+
+  #publicacoes .book p,
+  #publicacoes .book-card p,
+  #publicacoes article p{
+    margin:0 0 14px!important;
+    font-size:18px!important;
+    line-height:1.35!important;
+  }
+
+  #publicacoes .book a,
+  #publicacoes .book-card a,
+  #publicacoes article a{
+    width:max-content!important;
+    max-width:100%!important;
+    margin-top:10px!important;
+  }
+}
+
+@media(max-width:430px){
+  #publicacoes .book,
+  #publicacoes .book-card,
+  #publicacoes article{
+    grid-template-columns:118px minmax(0,1fr)!important;
+    column-gap:16px!important;
+    padding:24px 0!important;
+  }
+
+  #publicacoes .book img,
+  #publicacoes .book-card img,
+  #publicacoes article img{
+    width:118px!important;
+    max-height:190px!important;
+  }
+
+  #publicacoes h3{
+    font-size:27px!important;
+  }
+
+  #publicacoes .book p,
+  #publicacoes .book-card p,
+  #publicacoes article p{
+    font-size:17px!important;
+  }
 }
 
 </style>
@@ -250,7 +453,7 @@ footer{background:#061116;color:#ddd}
   <div class="wrap hero-grid">
     <div class="portrait"><img src="https://assets.zyrosite.com/cdn-cgi/image/format%3Dauto%2Cw%3D1440%2Ch%3D1800%2Cfit%3Dcrop/YrDJ7BPKNqCz3QNk/design-sem-nome-12-AE0rLxE2evTDyLEj.png" alt="Dr. Sergio Danilo Aragonez"></div>
     <div class="hero-copy">
-      <div class="eyebrow">Médico Radiologista · Autor</div>
+      <div class="eyebrow hero-eyebrow">Médico Radiologista · Autor</div>
       <h1>Sergio Danilo<span>Aragonez</span></h1>
       <div class="goldline"></div>
       <p><div class="hero-roles">
