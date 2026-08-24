@@ -1,14 +1,14 @@
-SERGIO DANILO ARAGONEZ — V19
+SERGIO DANILO ARAGONEZ — V29
 
-Foco desta versão: REVISÃO MOBILE
-
-- Conteúdo do Sobre mim da V18 preservado.
-- Cabeçalho mobile mais compacto.
-- Hero reduzido e melhor proporcionado no celular.
-- Tamanhos de títulos revisados.
-- Espaçamentos verticais reduzidos.
-- Prévia da galeria otimizada para telas pequenas.
-- Publicações mais compactas no celular.
-- Contato/rodapé revisado.
-- Página da galeria completa também recebeu ajustes mobile.
+Correções desta versão:
+- Mantidos integralmente os textos originais das três publicações da V28.
+- Hero mobile reorganizado:
+  • funções profissionais à esquerda;
+  • foto real do Dr. Sergio à direita;
+  • sem botão “Sobre mim”;
+  • sem botão de galeria no hero.
 - Desktop preservado.
+- Funções exibidas:
+  Médico Radiologista
+  Diretor da Clínica Diag Imagem
+  Diretor técnico do Serviço de Radiologia do HCPM – Palmeira das Missões

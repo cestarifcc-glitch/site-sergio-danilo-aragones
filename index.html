@@ -142,6 +142,89 @@ footer{background:#061116;color:#ddd}
   .gallery-card .image-wrap{height:138px}
 }
 
+
+
+
+
+
+.book-link{display:block;color:inherit;text-decoration:none}
+.book-cta{display:inline-block;margin-top:12px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#a87522;border-bottom:1px solid #b98937;padding-bottom:4px}
+.book-card:hover .cover img{transform:scale(1.012)}
+.cover img{transition:transform .3s ease}
+
+
+.hero-roles{margin-top:4px}
+.hero-roles span{
+  display:block;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(17px,1.4vw,21px);
+  line-height:1.45;
+  color:#f3efe6;
+}
+.hero-roles span+span{margin-top:3px}
+
+@media(max-width:900px){
+  .hero-grid{
+    display:grid!important;
+    grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr)!important;
+    grid-template-areas:
+      "title title"
+      "roles photo";
+    gap:8px 10px!important;
+    align-items:end!important;
+    padding-top:24px!important;
+  }
+  .hero-copy{display:contents!important}
+  .hero .eyebrow{grid-area:title;align-self:end;margin-bottom:2px}
+  .hero h1{grid-area:title;margin-top:22px!important;padding-top:12px}
+  .portrait{
+    grid-area:photo!important;
+    height:330px!important;
+    margin:0!important;
+    align-self:end!important;
+    justify-content:flex-end!important;
+  }
+  .portrait img{
+    height:330px!important;
+    max-width:100%;
+    object-fit:contain;
+    object-position:bottom right;
+  }
+  .portrait:before{
+    width:285px!important;
+    height:285px!important;
+    right:-32px!important;
+    left:auto!important;
+    bottom:0!important;
+    transform:none!important;
+  }
+  .goldline{display:none!important}
+  .hero-roles{
+    grid-area:roles;
+    align-self:center;
+    margin:0 0 22px 0;
+    padding-right:2px;
+  }
+  .hero-roles span{
+    font-size:15px;
+    line-height:1.38;
+  }
+  .hero-roles span+span{margin-top:10px}
+  .actions{display:none!important}
+}
+
+@media(max-width:430px){
+  .hero-grid{
+    grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr)!important;
+    gap:6px 8px!important;
+  }
+  .portrait{height:300px!important}
+  .portrait img{height:300px!important}
+  .portrait:before{width:260px!important;height:260px!important;right:-38px!important}
+  .hero-roles span{font-size:14px;line-height:1.36}
+  .hero-roles span+span{margin-top:8px}
+}
+
 </style>
 </head>
 <body>
@@ -149,7 +232,7 @@ footer{background:#061116;color:#ddd}
   <div class="wrap head">
     <a class="brand" href="#medico">SERGIO DANILO ARAGONEZ</a>
     <nav>
-      <a href="#medico">Médico</a>
+      <a href="#medico">INÍCIO</a>
       <a href="#sobre">Sobre mim</a>
       <a href="galeria.html">Galeria</a>
       <a href="#publicacoes">Publicações</a>
@@ -158,7 +241,7 @@ footer{background:#061116;color:#ddd}
     <button class="mobile-menu-btn" type="button">MENU</button>
   </div>
   <div class="mobile-nav">
-    <a href="#medico">Médico</a><a href="#sobre">Sobre mim</a><a href="galeria.html">Galeria</a><a href="#publicacoes">Publicações</a><a href="#contato">Contato</a>
+    <a href="#medico">INÍCIO</a><a href="#sobre">Sobre mim</a><a href="galeria.html">Galeria</a><a href="#publicacoes">Publicações</a><a href="#contato">Contato</a>
   </div>
 </header>
 
@@ -170,8 +253,12 @@ footer{background:#061116;color:#ddd}
       <div class="eyebrow">Médico Radiologista · Autor</div>
       <h1>Sergio Danilo<span>Aragonez</span></h1>
       <div class="goldline"></div>
-      <p>Entre a precisão da medicina e as grandes perguntas sobre a vida, o homem e o universo.</p>
-      <div class="actions"><a class="btn fill" href="#sobre">Sobre mim</a><a class="btn" href="galeria.html">Galeria de imagens →</a></div>
+      <p><div class="hero-roles">
+  <span>Médico Radiologista</span>
+  <span>Diretor da Clínica Diag Imagem</span>
+  <span>Diretor técnico do Serviço de Radiologia do HCPM – Palmeira das Missões</span>
+</div></p>
+      <div class="actions"></div>
     </div>
   </div>
 </section>
@@ -258,7 +345,7 @@ footer{background:#061116;color:#ddd}
         <div class="eyebrow">Galeria de imagens</div>
         <h2>Alguns momentos<br>da trajetória.</h2>
       </div>
-      <p>Uma pequena seleção do acervo pessoal e profissional de Sergio Danilo Aragonez. A galeria completa reúne as categorias já organizadas e aprovadas.</p>
+      <p>Registros de uma trajetória construída entre a medicina, a ciência, a cultura e a vida em comunidade. Momentos que ajudam a contar essa história.</p>
     </div>
     <div class="gallery-grid">
       <figure class="gallery-card" data-title="Palestras — Conhecimento compartilhado">
@@ -293,18 +380,18 @@ footer{background:#061116;color:#ddd}
       <p>Obras que percorrem temas como o universo, a origem da vida, o ser humano e questões fundamentais da medicina.</p>
     </div>
     <div class="books">
-      <article class="book-card">
+      <article class="book-card"><a class="book-link" href="a-linha-da-vida.html">
         <div class="cover"><img src="https://assets.zyrosite.com/cdn-cgi/image/format%3Dauto%2Cw%3D375%2Ch%3D593%2Cfit%3Dcrop/YrDJ7BPKNqCz3QNk/whatsapp-image-2025-08-13-at-11.42.18-mjEGBDKq6liqvDZq.jpeg" alt="A Linha da Vida"></div>
         <div class="book-meta"><h3>A Linha da Vida</h3><p>Do universo ao homem</p><div class="book-line"></div></div>
-      </article>
-      <article class="book-card">
+      <span class="book-cta">Conhecer a obra →</span></a></article>
+      <article class="book-card"><a class="book-link" href="genesis.html">
         <div class="cover"><img src="https://assets.zyrosite.com/cdn-cgi/image/format%3Dauto%2Cw%3D375%2Ch%3D542%2Cfit%3Dcrop/YrDJ7BPKNqCz3QNk/whatsapp-image-2026-08-04-at-08.50.00-vp9AtSikEcPmxrL1.jpeg" alt="Gênesis"></div>
         <div class="book-meta"><h3>Gênesis</h3><p>Das estrelas ao homem</p><div class="book-line"></div></div>
-      </article>
-      <article class="book-card">
+      <span class="book-cta">Conhecer a obra →</span></a></article>
+      <article class="book-card"><a class="book-link" href="cancer-de-mama.html">
         <div class="cover"><img src="https://assets.zyrosite.com/cdn-cgi/image/format%3Dauto%2Cw%3D768%2Ch%3D1366%2Cfit%3Dcrop/YrDJ7BPKNqCz3QNk/whatsapp-image-2025-08-13-at-11.42.18-1-YrDJ7BGgPoinkQXz.jpeg" alt="Câncer de Mama"></div>
         <div class="book-meta"><h3>Câncer de Mama</h3><p>Uma abordagem sucinta, prática e multidisciplinar</p><div class="book-line"></div></div>
-      </article>
+      <span class="book-cta">Conhecer a obra →</span></a></article>
     </div>
   </div>
 </section>
