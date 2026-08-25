@@ -40,6 +40,40 @@ footer{padding:30px 0 40px;color:#777;font-size:10px;text-align:center}
 }
 
 </style>
+
+<style id="gallery-blue-v46">
+:root{
+  --accent:#2f80ed;
+  --blue:#2f80ed;
+}
+.gallery-title,
+.gallery-section-title,
+.gallery-count,
+.category-count,
+.gallery-label,
+.gallery-card .label,
+.gallery-card .eyebrow,
+.gallery-section h2,
+.gallery-section h3,
+.lightbox-title,
+.modal-title{
+  color:#2f80ed!important;
+}
+.gallery-section,
+.gallery-row,
+.gallery-card,
+.category-block{
+  --accent:#2f80ed;
+}
+.gallery-section::before,
+.gallery-title::after,
+.gallery-row::before,
+.category-block::before{
+  border-color:#2f80ed!important;
+  background:#2f80ed!important;
+}
+</style>
+
 </head>
 <body>
 <header><div class="wrap head"><a class="brand" href="index.html">SERGIO DANILO ARAGONEZ<small>MEDICINA · CIÊNCIA · CONHECIMENTO</small></a><nav><a href="index.html#medico">Médico</a><a href="index.html#sobre">Sobre mim</a><a class="active" href="galeria.html">Galeria de imagens</a><a href="index.html#publicacoes">Publicações</a><a href="index.html#contato">Contato</a></nav></div></header>
@@ -197,3 +231,7 @@ document.querySelectorAll('.row-next').forEach(b=>b.addEventListener('click',()=
 let sx=0;main.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});main.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>45)(dx<0?document.querySelector('.next'):document.querySelector('.prev')).click()},{passive:true});
 </script>
 </body></html>
+<style>
+.book-cta,.publication-cta,a.book-cta,a.publication-cta,
+a[href*="obra"]{color:#2f80ed!important;border-color:#2f80ed!important}
+</style>
