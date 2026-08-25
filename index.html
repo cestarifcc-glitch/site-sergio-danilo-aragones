@@ -1633,6 +1633,255 @@ footer{background:#061116;color:#ddd}
   }
 }
 
+
+/* V39 — HERO MOBILE APROVADO */
+@media(max-width:700px){
+  html,body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden!important;
+  }
+
+  #medico{
+    position:relative!important;
+    overflow:hidden!important;
+    background:
+      radial-gradient(circle at 77% 40%,
+        rgba(240,173,37,.46) 0%,
+        rgba(240,173,37,.23) 15%,
+        rgba(240,173,37,.10) 29%,
+        rgba(240,173,37,.035) 43%,
+        transparent 59%),
+      linear-gradient(120deg,#03080b 0%,#03080b 42%,#091014 100%)!important;
+  }
+
+  #medico::before{
+    content:"";
+    position:absolute;
+    width:520px;
+    height:520px;
+    right:-205px;
+    top:155px;
+    border:1px solid rgba(240,173,37,.48);
+    border-radius:50%;
+    pointer-events:none;
+    z-index:0;
+  }
+
+  #medico::after{
+    content:"";
+    position:absolute;
+    width:420px;
+    height:420px;
+    right:-155px;
+    top:205px;
+    border:1px solid rgba(240,173,37,.14);
+    border-radius:50%;
+    pointer-events:none;
+    z-index:0;
+  }
+
+  #medico .hero-grid{
+    position:relative!important;
+    z-index:2!important;
+    display:grid!important;
+    grid-template-columns:43% 57%!important;
+    grid-template-areas:
+      "title title"
+      "roles photo"!important;
+    column-gap:8px!important;
+    row-gap:14px!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-height:650px!important;
+    padding:30px 18px 0!important;
+    overflow:hidden!important;
+  }
+
+  #medico .hero-copy{
+    display:contents!important;
+  }
+
+  #medico .hero-eyebrow,
+  #medico .eyebrow,
+  #medico .goldline,
+  #medico .actions{
+    display:none!important;
+  }
+
+  #medico h1{
+    grid-area:title!important;
+    margin:0!important;
+    padding:0!important;
+    font-size:47px!important;
+    line-height:.91!important;
+    letter-spacing:-.035em!important;
+    position:relative!important;
+    z-index:5!important;
+  }
+
+  #medico h1 .name-line,
+  #medico h1 .surname-line{
+    display:block!important;
+    white-space:nowrap!important;
+  }
+
+  #medico h1 .name-line{
+    color:#f4f1eb!important;
+  }
+
+  #medico h1 .surname-line{
+    color:#f0ad25!important;
+  }
+
+  #medico .hero-roles{
+    grid-area:roles!important;
+    align-self:end!important;
+    margin:0 0 34px!important;
+    padding:0 6px 0 0!important;
+    position:relative!important;
+    z-index:6!important;
+  }
+
+  #medico .hero-role-item{
+    display:grid!important;
+    grid-template-columns:46px minmax(0,1fr)!important;
+    gap:12px!important;
+    align-items:center!important;
+    padding:15px 0!important;
+    min-height:94px!important;
+    border-bottom:1px solid rgba(240,173,37,.42)!important;
+  }
+
+  #medico .hero-role-item:last-child{
+    border-bottom:0!important;
+  }
+
+  #medico .role-icon{
+    width:44px!important;
+    height:44px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    border:1.4px solid #f0ad25!important;
+    border-radius:50%!important;
+    color:#f0ad25!important;
+    background:rgba(3,8,11,.35)!important;
+    box-shadow:0 0 18px rgba(240,173,37,.07)!important;
+  }
+
+  #medico .role-icon svg{
+    display:block!important;
+    width:25px!important;
+    height:25px!important;
+    overflow:visible!important;
+  }
+
+  #medico .role-text{
+    display:block!important;
+    margin:0!important;
+    font-family:Georgia,"Times New Roman",serif!important;
+    font-size:15px!important;
+    line-height:1.32!important;
+    color:#f4f1eb!important;
+    text-align:left!important;
+    word-break:normal!important;
+    overflow-wrap:normal!important;
+    hyphens:none!important;
+  }
+
+  /* The portrait column is a hard clipping boundary:
+     the doctor can never overlap the credentials. */
+  #medico .portrait{
+    grid-area:photo!important;
+    position:relative!important;
+    align-self:end!important;
+    justify-self:stretch!important;
+    width:100%!important;
+    height:515px!important;
+    min-height:515px!important;
+    margin:0!important;
+    padding:0!important;
+    overflow:hidden!important;
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+
+  #medico .portrait::before,
+  #medico .portrait::after{
+    display:none!important;
+    content:none!important;
+  }
+
+  #medico .portrait img{
+    position:absolute!important;
+    z-index:3!important;
+    right:-18px!important;
+    bottom:-6px!important;
+    width:auto!important;
+    height:500px!important;
+    max-width:none!important;
+    object-fit:contain!important;
+    object-position:bottom right!important;
+    margin:0!important;
+    transform:none!important;
+    filter:drop-shadow(0 14px 28px rgba(0,0,0,.30))!important;
+  }
+
+  #sobre{
+    margin-top:0!important;
+    padding-top:46px!important;
+  }
+}
+
+@media(max-width:390px){
+  #medico .hero-grid{
+    grid-template-columns:44% 56%!important;
+    min-height:620px!important;
+    padding-left:14px!important;
+    padding-right:14px!important;
+    column-gap:6px!important;
+  }
+
+  #medico h1{
+    font-size:42px!important;
+  }
+
+  #medico .hero-role-item{
+    grid-template-columns:40px minmax(0,1fr)!important;
+    gap:9px!important;
+    min-height:88px!important;
+    padding:12px 0!important;
+  }
+
+  #medico .role-icon{
+    width:38px!important;
+    height:38px!important;
+  }
+
+  #medico .role-icon svg{
+    width:22px!important;
+    height:22px!important;
+  }
+
+  #medico .role-text{
+    font-size:13.4px!important;
+    line-height:1.30!important;
+  }
+
+  #medico .portrait{
+    height:485px!important;
+    min-height:485px!important;
+  }
+
+  #medico .portrait img{
+    height:472px!important;
+    right:-20px!important;
+    bottom:-5px!important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -1654,53 +1903,65 @@ footer{background:#061116;color:#ddd}
 </header>
 
 <main>
+
 <section class="hero" id="medico">
   <div class="wrap hero-grid">
-    <div class="portrait"><img src="https://assets.zyrosite.com/cdn-cgi/image/format%3Dauto%2Cw%3D1440%2Ch%3D1800%2Cfit%3Dcrop/YrDJ7BPKNqCz3QNk/design-sem-nome-12-AE0rLxE2evTDyLEj.png" alt="Dr. Sergio Danilo Aragonez"></div>
+    <div class="portrait">
+      <img src="https://assets.zyrosite.com/cdn-cgi/image/format%3Dauto%2Cw%3D1440%2Ch%3D1800%2Cfit%3Dcrop/YrDJ7BPKNqCz3QNk/design-sem-nome-12-AE0rLxE2evTDyLEj.png" alt="Dr. Sergio Danilo Aragonez">
+    </div>
+
     <div class="hero-copy">
       <div class="eyebrow hero-eyebrow">Médico Radiologista · Autor</div>
-      <h1><span class="name-line">Sergio Danilo</span><span class="surname-line">Aragonez</span></h1>
+
+      <h1>
+        <span class="name-line">Sergio Danilo</span>
+        <span class="surname-line">Aragonez</span>
+      </h1>
+
       <div class="goldline"></div>
-      <p>
 
-<div class="hero-roles">
-  <div class="hero-role-item">
-    <span class="role-icon" aria-hidden="true">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M6 3v5a6 6 0 0 0 12 0V3"/>
-        <path d="M4 3h4M16 3h4"/>
-        <path d="M12 14v2a4 4 0 0 0 4 4h1"/>
-        <circle cx="19" cy="20" r="2"/>
-      </svg>
-    </span>
-    <span class="role-text">Médico<br>Radiologista</span>
-  </div>
+      <div class="hero-roles">
+        <div class="hero-role-item">
+          <span class="role-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 5v7a7 7 0 0 0 14 0V5"/>
+              <path d="M7 5h4M21 5h4"/>
+              <path d="M16 19v2a5 5 0 0 0 5 5h2"/>
+              <circle cx="25" cy="26" r="2.5"/>
+            </svg>
+          </span>
+          <span class="role-text">Médico<br>Radiologista</span>
+        </div>
 
-  <div class="hero-role-item">
-    <span class="role-icon" aria-hidden="true">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M3 21h18"/>
-        <path d="M5 21V8h14v13"/>
-        <path d="M9 8V4h6v4"/>
-        <path d="M12 11v6M9 14h6"/>
-      </svg>
-    </span>
-    <span class="role-text">Diretor da<br>Clínica Diag Imagem</span>
-  </div>
+        <div class="hero-role-item">
+          <span class="role-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 27h20"/>
+              <path d="M8 27V11h16v16"/>
+              <path d="M12 11V6h8v5"/>
+              <path d="M16 14v8M12 18h8"/>
+            </svg>
+          </span>
+          <span class="role-text">Diretor da<br>Clínica Diag Imagem</span>
+        </div>
 
-  <div class="hero-role-item">
-    <span class="role-icon" aria-hidden="true">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="8" r="4"/>
-        <path d="M5 21a7 7 0 0 1 14 0"/>
-      </svg>
-    </span>
-    <span class="role-text">Diretor técnico do<br>Serviço de Radiologia<br>do HCPM – Palmeira<br>das Missões</span>
-  </div>
-</div>
-</div>
+        <div class="hero-role-item">
+          <span class="role-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 26h18"/>
+              <path d="M10 26v-7h12v7"/>
+              <path d="M12 19v-3a4 4 0 0 1 8 0v3"/>
+              <circle cx="16" cy="11" r="5"/>
+              <path d="M8 26v-3M24 26v-3"/>
+            </svg>
+          </span>
+          <span class="role-text">Diretor técnico do<br>Serviço de Radiologia<br>do HCPM –<br>Palmeira das Missões</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+
 
 
 <section class="about" id="sobre">
