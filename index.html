@@ -2734,6 +2734,31 @@ header nav a.active,
 }
 </style>
 
+
+<style id="sd-v53-mobile-name-white">
+@media(max-width:700px){
+  /* Primeira linha do nome sempre branca no mobile */
+  #medico .sd-title h1 span,
+  #medico .sd-title h1 > span:first-child,
+  #medico h1 .name-line,
+  #medico h1 > span:first-child,
+  .sd-hero .sd-title h1 span,
+  .hero .hero-copy h1 .name-line{
+    color:#f5f1e9!important;
+    -webkit-text-fill-color:#f5f1e9!important;
+  }
+
+  /* Sobrenome permanece azul */
+  #medico .sd-title h1 strong,
+  #medico h1 .surname-line,
+  .sd-hero .sd-title h1 strong,
+  .hero .hero-copy h1 .surname-line{
+    color:#2f80ed!important;
+    -webkit-text-fill-color:#2f80ed!important;
+  }
+}
+</style>
+
 </head>
 <body>
 <header>
