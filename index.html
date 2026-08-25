@@ -2507,18 +2507,49 @@ a.publication-cta{
 }
 </style>
 
+
+<style id="sd-v49-header-normalized">
+.brand{
+  display:block!important;
+  line-height:1.05!important;
+}
+.brand small{
+  display:block!important;
+  margin-top:5px!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:8px!important;
+  line-height:1!important;
+  letter-spacing:.20em!important;
+  color:#2f80ed!important;
+  text-transform:uppercase!important;
+}
+header nav a,
+.desktop-nav a{
+  color:#f5f1e9!important;
+}
+header nav a:hover,
+.desktop-nav a:hover,
+header nav a.active,
+.desktop-nav a.active{
+  color:#2f80ed!important;
+}
+.mobile-menu-btn{
+  border-color:#2f80ed!important;
+}
+@media(max-width:700px){
+  .brand small{
+    font-size:7px!important;
+    letter-spacing:.16em!important;
+  }
+}
+</style>
+
 </head>
 <body>
 <header>
   <div class="wrap head">
-    <a class="brand" href="index.html">SERGIO DANILO ARAGONEZ</a>
-    <nav>
-      <a href="index.html">INÍCIO</a>
-      <a href="#sobre">Sobre mim</a>
-      <a href="galeria.html">Galeria</a>
-      <a href="#publicacoes">Publicações</a>
-      <a href="#contato">Contato</a>
-    </nav>
+    <a class="brand" href="index.html">SERGIO DANILO ARAGONEZ<small>PÁGINA PESSOAL</small></a>
+    <nav class="desktop-nav"><a href="index.html">INÍCIO</a><a href="index.html#sobre">SOBRE MIM</a><a href="galeria.html">GALERIA</a><a href="index.html#publicacoes">PUBLICAÇÕES</a><a href="index.html#contato">CONTATO</a></nav>
     <button class="mobile-menu-btn" type="button">MENU</button>
   </div>
   <div class="mobile-nav">
@@ -2540,7 +2571,7 @@ a.publication-cta{
         <span class="sd-icon">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v5a6 6 0 0 0 12 0V3M6 3H4m14 0h2M12 14v2a4 4 0 0 0 4 4h1"/><circle cx="19" cy="20" r="2"/></svg>
         </span>
-        <span>Médico<br>Radiologista</span>
+        <span><br>Radiologista</span>
       </div>
       <div class="sd-role">
         <span class="sd-icon">
@@ -2748,9 +2779,7 @@ const brand=document.querySelector('.brand');
 if(brand){brand.style.cursor='pointer';brand.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));}
 </script>
 
-<nav id="sdMobileMenu" class="sd-mobile-menu" aria-hidden="true">
-<a href="index.html">Início</a><a href="#sobre">Sobre mim</a><a href="galeria.html">Galeria</a><a href="#publicacoes">Publicações</a><a href="#contato">Contato</a>
-</nav>
+<nav id="sdMobileMenu" class="sd-mobile-menu" aria-hidden="true"><a href="index.html">INÍCIO</a><a href="index.html#sobre">SOBRE MIM</a><a href="galeria.html">GALERIA</a><a href="index.html#publicacoes">PUBLICAÇÕES</a><a href="index.html#contato">CONTATO</a></nav>
 <style>
 .sd-mobile-menu{display:none}
 @media(max-width:700px){
