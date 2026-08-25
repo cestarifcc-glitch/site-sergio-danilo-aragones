@@ -1444,6 +1444,195 @@ footer{background:#061116;color:#ddd}
   }
 }
 
+
+/* V38 — integração do fundo + foto mais alta */
+@media(max-width:700px){
+  html,body{
+    width:100%!important;
+    max-width:100%!important;
+    overflow-x:hidden!important;
+  }
+
+  #medico{
+    position:relative!important;
+    overflow:hidden!important;
+    background:
+      radial-gradient(circle at 78% 43%,
+        rgba(240,173,37,.42) 0%,
+        rgba(240,173,37,.20) 15%,
+        rgba(240,173,37,.08) 28%,
+        rgba(240,173,37,.025) 42%,
+        transparent 58%),
+      radial-gradient(circle at 82% 61%,
+        rgba(240,173,37,.10) 0%,
+        transparent 44%),
+      #03080b!important;
+  }
+
+  #medico::before{
+    content:""!important;
+    position:absolute!important;
+    width:500px!important;
+    height:500px!important;
+    right:-170px!important;
+    top:98px!important;
+    border-radius:50%!important;
+    border:1px solid rgba(240,173,37,.36)!important;
+    box-shadow:
+      0 0 0 62px rgba(240,173,37,.014),
+      0 0 0 124px rgba(240,173,37,.006)!important;
+    pointer-events:none!important;
+    z-index:0!important;
+  }
+
+  #medico .hero-grid{
+    position:relative!important;
+    z-index:2!important;
+    display:grid!important;
+    grid-template-columns:44% 56%!important;
+    grid-template-areas:
+      "name name"
+      "roles photo"!important;
+    column-gap:6px!important;
+    row-gap:0!important;
+    padding:22px 14px 0!important;
+    background:transparent!important;
+    overflow:visible!important;
+  }
+
+  #medico .hero-copy{display:contents!important}
+
+  #medico .eyebrow,
+  #medico .hero-eyebrow,
+  #medico .goldline,
+  #medico .actions{
+    display:none!important;
+  }
+
+  #medico h1{
+    grid-area:name!important;
+    margin:0 0 -14px!important;
+    padding:0!important;
+    font-size:46px!important;
+    line-height:.91!important;
+    letter-spacing:-.035em!important;
+    position:relative!important;
+    z-index:5!important;
+  }
+
+  #medico h1 .name-line,
+  #medico h1 .surname-line{
+    display:block!important;
+    white-space:nowrap!important;
+  }
+
+  #medico h1 .name-line{color:#f4f1eb!important}
+  #medico h1 .surname-line{color:#f0ad25!important}
+
+  #medico .hero-roles{
+    grid-area:roles!important;
+    align-self:end!important;
+    margin:0 0 14px!important;
+    padding:0 6px 0 0!important;
+    position:relative!important;
+    z-index:6!important;
+  }
+
+  #medico .hero-role-item{
+    display:grid!important;
+    grid-template-columns:36px minmax(0,1fr)!important;
+    gap:8px!important;
+    align-items:center!important;
+    padding:10px 0!important;
+    border-bottom:1px solid rgba(240,173,37,.28)!important;
+  }
+
+  #medico .hero-role-item:last-child{border-bottom:0!important}
+
+  #medico .role-icon{
+    width:34px!important;
+    height:34px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    border:1px solid #f0ad25!important;
+    border-radius:50%!important;
+    color:#f0ad25!important;
+  }
+
+  #medico .role-icon svg{
+    width:18px!important;
+    height:18px!important;
+  }
+
+  #medico .role-text{
+    display:block!important;
+    font-family:Arial,Helvetica,sans-serif!important;
+    font-size:12px!important;
+    line-height:1.28!important;
+    color:#f4f1ea!important;
+  }
+
+  #medico .portrait{
+    grid-area:photo!important;
+    position:relative!important;
+    height:420px!important;
+    min-height:420px!important;
+    margin:-48px -16px 0 -20px!important;
+    padding:0!important;
+    display:flex!important;
+    align-items:flex-end!important;
+    justify-content:flex-end!important;
+    overflow:visible!important;
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+
+  #medico .portrait::before,
+  #medico .portrait::after{
+    display:none!important;
+    content:none!important;
+  }
+
+  #medico .portrait img{
+    position:relative!important;
+    z-index:3!important;
+    display:block!important;
+    width:136%!important;
+    max-width:none!important;
+    height:126%!important;
+    object-fit:contain!important;
+    object-position:bottom right!important;
+    transform:translate(-8px,-34px)!important;
+    transform-origin:bottom right!important;
+    background:transparent!important;
+    filter:drop-shadow(0 14px 28px rgba(0,0,0,.30))!important;
+  }
+}
+
+@media(max-width:390px){
+  #medico .hero-grid{
+    grid-template-columns:45% 55%!important;
+    padding-left:12px!important;
+    padding-right:12px!important;
+  }
+
+  #medico h1{font-size:42px!important}
+
+  #medico .portrait{
+    height:395px!important;
+    min-height:395px!important;
+    margin-top:-44px!important;
+  }
+
+  #medico .portrait img{
+    width:140%!important;
+    height:128%!important;
+    transform:translate(-6px,-30px)!important;
+  }
+}
+
 </style>
 </head>
 <body>
